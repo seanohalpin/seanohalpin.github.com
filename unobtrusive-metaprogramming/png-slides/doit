@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-require 'fileutils'
-files = Dir["*.png"].sort
-files.each_with_index do |file, index|
-  base = file.gsub(/\d+/, sprintf("%02d", index))
-  p [file, index, base]
-  FileUtils.mv file, base
-end

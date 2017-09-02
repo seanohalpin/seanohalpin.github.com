@@ -1,0 +1,197 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   { display: block; unicode-bidi: embed }
+li              { display: list-item }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+col             { display: table-column }
+colgroup        { display: table-column-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bolder; text-align: center }
+caption         { text-align: center }
+body            { margin: 8px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            { margin: 1.12em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace }
+pre             { white-space: pre }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+table           { border-spacing: 2px; }
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th, tr      { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+ol, ul, dir,
+menu, dd        { margin-left: 40px }
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { text-decoration: underline }
+br:before       { content: "\A"; white-space: pre-line }
+center          { text-align: center }
+:link, :visited { text-decoration: underline }
+:focus          { outline: thin dotted invert }
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  h1            { page-break-before: always }
+  h1, h2, h3,
+  h4, h5, h6    { page-break-after: avoid }
+  ul, ol, dl    { page-break-before: avoid }
+}
+
+body, input, textarea, button, select {
+   font-family: Georgia, Palatino, "Times New Roman", serif;
+}
+
+pre, code {
+   font-family: Monaco, "Lucida Console", "Andale Mono", monospace;
+   padding: 1em;
+   font-size: 93%;
+}
+
+hr { display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+   text-align: left;
+   font-family: "Gill Sans", Verdana, Helvetica, Arial, sans serif;
+   margin-right: 0;
+   font-weight: bold;
+}
+
+/* see http://developer.yahoo.com/yui/3/cssfonts/ */
+h1 {
+   font-size: 182%; /* 24px  */
+}
+
+h2 {
+   font-size: 123.1%; /* 16px */
+}
+
+h3 {
+   font-size: 100%; /* 13px */
+}
+
+h4 {
+   font-size: 93%; /* 12px */
+}
+
+h5 {
+   font-size: 85%; /* 11px */
+}
+
+h6 {
+   font-size: 77%; /* 10px */
+}
+
+body, input, textarea, button, select {
+   color: #303030;
+   line-height: 1.4;
+   text-align: justify;
+}
+
+a {
+   color: #404080;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+  font: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body, input, textarea, button, select {
+   margin-left: 24%;
+   margin-right: 24%;
+}
+
+h1 {
+   margin-left: -1cm;
+   border-top: 1px solid black;
+}
+
+.preamble {
+   margin-left: -1cm;
+}
+
+.PREAMBLE {
+   margin-left: -1cm;
+}
+
+h2 {
+   margin-left: -1cm;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   padding-top: 0.4em;
+   padding-bottom: 0.4em;
+   border-bottom: 1px solid #C0C0C0;
+}
+
+h3 {
+   margin-bottom: 1em;
+   padding-top: 0.4em;
+   padding-bottom: 0.4em;
+   border-bottom: 1px solid #C0C0C0;
+}
+
+.src, .example {
+   padding: 1em;
+   overflow: auto;
+}
+h2 + div.outline-text-2 p span.timestamp-wrapper  {
+   margin-left: -1cm;
+   position: relative;
+   top: -1em;
+}
+
+ul {
+    list-style-type: square;
+}

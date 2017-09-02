@@ -1,0 +1,24 @@
+body, input, textarea, button, select {
+   font-family: "minion-pro-1", "minion-pro-2", Palatino, Georgia, "Times New Roman", serif;
+   font-size: 1em;
+
+   margin-left: 24%;
+   margin-right: 24%;
+   color: #303030;
+   background-color: #FCFCFC;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+pre, code {
+   font-family: Monaco, monospace;
+   font-size: 0.8em;
+   background-color: #F0F0F0;
+   padding: 0.4em;
+   padding-left: 0.6em;
+   padding-right: 0.6em;
+}
+
+a {
+   color: #404080;
+}
